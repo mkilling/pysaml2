@@ -70,7 +70,7 @@ setup(
 
     scripts=["tools/parse_xsd2.py", "tools/make_metadata.py"],
 
-    test_requires=[
+    tests_require=[
         'pyasn1',
         'pymongo',
         'python-memcached',
