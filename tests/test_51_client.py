@@ -548,6 +548,12 @@ class TestClient:
         """
 
         """
+        self.server = Server("idp_conf")
+
+        conf = config.SPConfig()
+        conf.load_file("server_conf")
+        self.client = Saml2Client(conf)
+
         for subject in self.client.users.subjects():
             self.client.users.remove_person(subject)
             

@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#!/usr/bin/env python
 
 sources = """
 eNrsvemaG1l2IKYZL7JgaSTZs8gejx0FOiciisggk10ttTGF6mGzWC2qa+FXJNU1zkqjIoHIzOgE

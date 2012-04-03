@@ -282,6 +282,11 @@ class TestServer1():
         assert not resp.assertion 
 
     def test_authn_response_0(self):
+        self.server = Server("idp_conf")
+
+        conf = config.SPConfig()
+        conf.load_file("server_conf")
+        self.client = client.Saml2Client(conf)
         ava = { "givenName": ["Derek"], "surName": ["Jeter"], 
                 "mail": ["derek@nyy.mlb.com"]}
 

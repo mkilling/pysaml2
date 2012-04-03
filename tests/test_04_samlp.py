@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env pythony
 # -*- coding: utf-8 -*-
 #
 # Copyright (C) 2009 Umeå University.
