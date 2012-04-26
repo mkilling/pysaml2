@@ -251,7 +251,7 @@ class Saml2Client(object):
     def authn_request(self, query_id, destination, service_url, spentityid,
                         my_name="", vorg="", scoping=None, log=None, sign=None,
                         binding=saml2.BINDING_HTTP_POST,
-                        nameid_format=saml.NAMEID_FORMAT_EMAILADDRESS):
+                        nameid_format=saml.NAMEID_FORMAT_UNSPECIFIED):
         """ Creates an authentication request.
         
         :param query_id: The identifier for this request
