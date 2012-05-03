@@ -241,7 +241,7 @@ class Saml2Client(object):
             if isinstance(resp, AuthnResponse):
                 self.users.add_information_about_person(resp.session_info())
                 if log:
-                    log.error("--- ADDED person info ----")
+                    log.info("--- ADDED person info ----")
             elif isinstance(resp, LogoutResponse):
                 self.handle_logout_response(resp, log)
             elif log:
